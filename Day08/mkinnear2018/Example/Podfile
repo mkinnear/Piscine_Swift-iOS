@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'mkinnear2018_Example' do
+  pod 'mkinnear2018', :path => '../'
+
+  target 'mkinnear2018_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

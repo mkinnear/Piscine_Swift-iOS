@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ex03" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="vnb-kM-qUy" userLabel="Root Stack View">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gE5-q7-nXo" userLabel="Display Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="146.66666666666666"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UmE-px-BiU">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="146.66666666666666"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QG5-v6-7LO">
+                                                        <rect key="frame" x="7" y="34.333333333333336" width="363" height="79.333333333333314"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="66"/>
+                                                        <color key="textColor" red="0.85506465517241381" green="0.47633957746760269" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="highlightedColor" red="0.29132492784727387" green="0.57551234702589493" blue="0.649480883412069" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="0.80410479972375692" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="QG5-v6-7LO" firstAttribute="centerX" secondItem="UmE-px-BiU" secondAttribute="centerX" constant="1" id="26q-sl-kFf"/>
+                                                    <constraint firstItem="QG5-v6-7LO" firstAttribute="centerX" secondItem="UmE-px-BiU" secondAttribute="centerX" constant="1" id="Seh-RM-OhR"/>
+                                                    <constraint firstItem="QG5-v6-7LO" firstAttribute="centerY" secondItem="UmE-px-BiU" secondAttribute="centerY" constant="1" id="UKm-es-98Q"/>
+                                                    <constraint firstAttribute="trailing" secondItem="QG5-v6-7LO" secondAttribute="trailing" constant="5" id="ozB-s6-EKP"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="wTP-bq-hgh" userLabel="buttons Stack View">
+                                        <rect key="frame" x="0.0" y="236" width="375" height="498"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="ZTo-7Q-NOg">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="98"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9m-Ik-5Dx">
+                                                        <rect key="frame" x="0.0" y="0.0" width="92.333333333333329" height="98"/>
+                                                        <color key="backgroundColor" red="0.64818113590142346" green="0.66059401937068962" blue="0.6550982046270869" alpha="0.69643473756906082" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="55"/>
+                                                        <state key="normal" title="c">
+                                                            <color key="titleColor" red="0.30093225733448281" green="0.16764339800266378" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="Operations:" destination="BYZ-38-t0r" eventType="touchUpInside" id="swu-V0-ytw"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRK-wa-lTP">
+                                                        <rect key="frame" x="94.333333333333343" y="0.0" width="92.333333333333343" height="98"/>
+                                                        <color key="backgroundColor" red="0.64818113590142346" green="0.66059401937068962" blue="0.6550982046270869" alpha="0.69643473756906082" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-BoldItalic" family="Georgia" pointSize="28"/>
+                                                        <state key="normal" title="NEG">
+                                                            <color key="titleColor" red="0.30093225733448281" green="0.16764339800266378" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="Operations:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xAX-UC-GQW"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pf6-98-iZK">
+                                                        <rect key="frame" x="188.66666666666666" y="0.0" width="91.999999999999972" height="98"/>
+                                                        <color key="backgroundColor" red="0.64818113590142346" green="0.66059401937068962" blue="0.6550982046270869" alpha="0.69643473756906082" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-BoldItalic" family="Georgia" pointSize="50"/>
+                                                        <state key="normal" title="%">
+                                                            <color key="titleColor" red="0.30093225733448281" green="0.16764339800266378" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6NL-yd-eO4">
+                                                        <rect key="frame" x="282.66666666666669" y="0.0" width="92.333333333333314" height="98"/>
+                                                        <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="66"/>
+                                                        <state key="normal" title="/">
+                                                            <color key="titleColor" red="0.98476416277928158" green="1" blue="0.97689754157309117" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="Operations:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BJg-vr-eDY"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="voA-77-blG">
+                                                <rect key="frame" x="0.0" y="100" width="375" height="98"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SL5-FT-Hgj">
+                                                        <rect key="frame" x="0.0" y="0.0" width="92.333333333333329" height="98"/>
+                                                        <color key="backgroundColor" red="0.84912025560000004" green="0.86585735450000001" blue="0.85994213890000004" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="66"/>
+                                                        <state key="normal" title="7">
+                                                            <color key="titleColor" white="0.0" alpha="0.69578729281767959" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OdP-Le-asM"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XkR-gj-XMO">
+                                                        <rect key="frame" x="94.333333333333343" y="0.0" width="92.333333333333343" height="98"/>
+                                                        <color key="backgroundColor" red="0.84912025560000004" green="0.86585735450000001" blue="0.85994213890000004" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="66"/>
+                                                        <state key="normal" title="8">
+                                                            <color key="titleColor" white="0.0" alpha="0.69578729281767959" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hUI-qp-qOm"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAd-f3-5hL">
+                                                        <rect key="frame" x="188.66666666666666" y="0.0" width="91.999999999999972" height="98"/>
+                                                        <color key="backgroundColor" red="0.84912025560000004" green="0.86585735450000001" blue="0.85994213890000004" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="66"/>
+                                                        <state key="normal" title="9">
+                                                            <color key="titleColor" white="0.0" alpha="0.69578729281767959" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yjr-0o-OTt"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOM-AW-6nK">
+                                                        <rect key="frame" x="282.66666666666669" y="0.0" width="92.333333333333314" height="98"/>
+                                                        <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="66"/>
+                                                        <state key="normal" title="x">
+                                                            <color key="titleColor" red="0.98476416280000001" green="1" blue="0.97689754159999997" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="Operations:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ngr-c7-zPf"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="zif-m2-tqK">
+                                                <rect key="frame" x="0.0" y="200" width="375" height="98"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8t-cY-Zya">
+                                                        <rect key="frame" x="0.0" y="0.0" width="92.333333333333329" height="98"/>
+                                                        <color key="backgroundColor" red="0.84912025560000004" green="0.86585735450000001" blue="0.85994213890000004" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="66"/>
+                                                        <state key="normal" title="4">
+                                                            <color key="titleColor" white="0.0" alpha="0.70083736187845302" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SyI-MG-HQh"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ec-0e-ssh">
+                                                        <rect key="frame" x="94.333333333333343" y="0.0" width="92.333333333333343" height="98"/>
+                                                        <color key="backgroundColor" red="0.84912025560000004" green="0.86585735450000001" blue="0.85994213890000004" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="66"/>
+                                                        <state key="normal" title="5">
+                                                            <color key="titleColor" white="0.0" alpha="0.70083736187845302" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qXa-kN-6Kw"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oco-tH-r0E">
+                                                        <rect key="frame" x="188.66666666666666" y="0.0" width="91.999999999999972" height="98"/>
+                                                        <color key="backgroundColor" red="0.84912025560000004" green="0.86585735450000001" blue="0.85994213890000004" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="66"/>
+                                                        <state key="normal" title="6">
+                                                            <color key="titleColor" white="0.0" alpha="0.70083736187845302" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RLK-Ci-ctQ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Iu-f2-A2N">
+                                                        <rect key="frame" x="282.66666666666669" y="0.0" width="92.333333333333314" height="98"/>
+                                                        <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="66"/>
+                                                        <state key="normal" title="-">
+                                                            <color key="titleColor" red="0.98476416277928158" green="1" blue="0.97689754157309117" alpha="0.59196305248618775" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="titleShadowColor" red="0.85506465519999997" green="0.4763395775" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="Operations:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZOC-mV-U94"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="WdI-Na-1gK">
+                                                <rect key="frame" x="0.0" y="300" width="375" height="98"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yzX-dh-aWM">
+                                                        <rect key="frame" x="0.0" y="0.0" width="92.333333333333329" height="98"/>
+                                                        <color key="backgroundColor" red="0.84912025560000004" green="0.86585735450000001" blue="0.85994213890000004" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="66"/>
+                                                        <state key="normal" title="1">
+                                                            <color key="titleColor" white="0.0" alpha="0.6973843232044199" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="515-sb-p9h"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oxy-bd-q40">
+                                                        <rect key="frame" x="94.333333333333343" y="0.0" width="92.333333333333343" height="98"/>
+                                                        <color key="backgroundColor" red="0.84912025560000004" green="0.86585735450000001" blue="0.85994213890000004" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="66"/>
+                                                        <state key="normal" title="2">
+                                                            <color key="titleColor" white="0.0" alpha="0.6973843232044199" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8zP-q7-e5z"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6i-yr-xMa">
+                                                        <rect key="frame" x="188.66666666666666" y="0.0" width="91.999999999999972" height="98"/>
+                                                        <color key="backgroundColor" red="0.84912025560000004" green="0.86585735450000001" blue="0.85994213890000004" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="66"/>
+                                                        <state key="normal" title="3">
+                                                            <color key="titleColor" white="0.0" alpha="0.6973843232044199" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ynx-qa-nrP"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFP-gh-XEA">
+                                                        <rect key="frame" x="282.66666666666669" y="0.0" width="92.333333333333314" height="98"/>
+                                                        <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="66"/>
+                                                        <state key="normal" title="+">
+                                                            <color key="titleColor" red="0.98476416280000001" green="1" blue="0.97689754159999997" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="Operations:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9kw-77-3NQ"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="P7l-DH-TZX">
+                                                <rect key="frame" x="0.0" y="400" width="375" height="98"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="nv6-hf-lqj">
+                                                        <rect key="frame" x="0.0" y="0.0" width="186.66666666666666" height="98"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cm7-04-cZs">
+                                                                <rect key="frame" x="0.0" y="0.0" width="93.333333333333329" height="98"/>
+                                                                <color key="backgroundColor" red="0.84912025560000004" green="0.86585735450000001" blue="0.85994213890000004" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="66"/>
+                                                                <state key="normal" title="0">
+                                                                    <color key="titleColor" white="0.0" alpha="0.70159271408839774" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QFA-SZ-cpo"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bo3-Ej-3UX">
+                                                                <rect key="frame" x="93.333333333333343" y="0.0" width="93.333333333333343" height="98"/>
+                                                                <color key="backgroundColor" red="0.84912025560000004" green="0.86585735450000001" blue="0.85994213890000004" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="66"/>
+                                                                <state key="normal" title="   "/>
+                                                                <connections>
+                                                                    <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8jS-nq-OZC"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0N-qF-B8P">
+                                                        <rect key="frame" x="188.66666666666666" y="0.0" width="93.333333333333343" height="98"/>
+                                                        <color key="backgroundColor" red="0.84912025560000004" green="0.86585735450000001" blue="0.85994213890000004" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="58"/>
+                                                        <state key="normal" title=" , ">
+                                                            <color key="titleColor" white="0.0" alpha="0.69980145027624308" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nua-Zx-AiT">
+                                                        <rect key="frame" x="284" y="0.0" width="91" height="98"/>
+                                                        <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="74"/>
+                                                        <state key="normal" title="=">
+                                                            <color key="titleColor" red="0.98476416280000001" green="1" blue="0.97689754159999997" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="Operations:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ByN-TN-15T"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="gE5-q7-nXo" firstAttribute="height" secondItem="vnb-kM-qUy" secondAttribute="height" multiplier="0.2" id="qNX-V1-QTf"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vnb-kM-qUy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8CA-zy-nPg"/>
+                            <constraint firstItem="vnb-kM-qUy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="IsG-z3-Q3T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vnb-kM-qUy" secondAttribute="trailing" id="k6t-XY-8VH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vnb-kM-qUy" secondAttribute="bottom" id="xXb-Nx-vX5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="DisplayLabel" destination="QG5-v6-7LO" id="j95-vG-uHL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

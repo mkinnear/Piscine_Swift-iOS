@@ -1,0 +1,16 @@
+PODS:
+  - mkinnear2018 (0.1.0)
+
+DEPENDENCIES:
+  - mkinnear2018 (from `../`)
+
+EXTERNAL SOURCES:
+  mkinnear2018:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  mkinnear2018: c1430bcb8e5d9790a6368e96e139318f5237b038
+
+PODFILE CHECKSUM: c2f972a127e82f6f181a0723a4e4431fade08e88
+
+COCOAPODS: 1.5.3
